@@ -1,0 +1,5 @@
+{
+    "john": { "bio": "John is a writer.", "age": 32 },
+    "jane": { "bio": "Jane loves coding.", "age": 28 }
+  }
+  

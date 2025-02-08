@@ -1,0 +1,17 @@
+---
+import authorsData from "../../data/authors.json";
+
+export async function getStaticPaths() {
+  // Get all author keys from the JSON file
+  const authors = Object.keys(authorsData);
+
+  // Return paths for each author
+  return authors.map((author) => ({ params: { author } }));
+}
+
+const { author } = Astro.params;
+const authorData = authorsData[author] || { bio: "No info available.", age: "N/A" };
+---
+<h1>{author}</h1>
+<p>{authorData.bio}</p>
+<p>Age: {authorData.age}</p>

@@ -1,0 +1,1 @@
+console.log('Welcome, browser2 console!')
