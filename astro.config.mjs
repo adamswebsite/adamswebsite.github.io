@@ -9,5 +9,6 @@ import svelte from '@astrojs/svelte';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://adamswebsite.github.io',
   integrations: [tailwind(), react(), vue(), svelte()]
 });
